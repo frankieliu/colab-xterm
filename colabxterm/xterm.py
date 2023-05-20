@@ -58,7 +58,7 @@ class XTerm:
             argv = [os.getenv("SHELL", '/bin/sh')]
 
         try:
-            process = PtyProcess.spawn(argv)
+            process = PtyProcess.spawn(argv, dimensions=(15,80))
             staticFolder = os.path.join(
                 os.path.dirname(__file__), "client/dist")
         except Exception as e:
