@@ -9,6 +9,6 @@ def _get_version():
 
 setup(
         name='colabxterm',
-        version=_get_version(),
+        # version=_get_version(),
         packages=['colabxterm']
         )
