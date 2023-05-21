@@ -14,15 +14,16 @@ setup(name='colab-xterm',
       description='Open a terminal in colab, including the free tier.',
       long_description_content_type="text/markdown",
       long_description=open('README.md').read(),
-      url='https://github.com/InfuseAI/colab-xterm',
+      url='https://github.com/frankieliu/colab-xterm',
       project_urls={
-          "Bug Tracker": "https://github.com/InfuseAI/colab-xterm/issues",
+          "Bug Tracker": "https://github.com/frankieliu/colab-xterm/issues",
       },
       python_requires=">=3.6",
       packages=["colabxterm"],
-      package_data={
-          'colabxterm': ['client/dist/*', 'VERSION']
-      },
+      #package_data={
+      #     'colabxterm': ['client/dist/*', 'VERSION']
+      #},
+      package_dir=["colabxterm":"colabxterm"],
       include_package_data=False,
       install_requires=['ptyprocess~=0.7.0', 'tornado>5.1'],
       extras_require={
