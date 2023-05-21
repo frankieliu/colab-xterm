@@ -1,7 +1,8 @@
 from .xterm import XTerm
 from .notebook import load_ipython_extension
 
-from ._version import __version__
+#from ._version import __version__
+__version__ = "dev"
 
 # import os
 # def _get_version():
